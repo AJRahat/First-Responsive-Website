@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+/* --------------Global CSS----------------- */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: #FFF;
+    padding: 20px 25px;
+    border: 0;
+    border-radius: 5px;
+}
+/* --------------Header---------------------- */
+header{
+    background-color:rgb(247, 223, 196);
+    width: 100%;
+}
+.header{
+    /* background-color:rgba(255, 144, 14, 0.10); */
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom:25px ;
+}
+.navigator{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+.banner{
+    text-align: center;
+}
+.banner img{
+    width: 100%;
+}
+/* ------------------------------Main------------------------ */
+main{
+    width: 80%;
+    margin: 100px auto;
+}
+/* --------------------Quick List Container------------------- */
+.quick-list-container{
+    display: flex;
+    margin:50px 0px;
+    align-items: center;
+}
+.quick-list-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.quick-list-content{
+    padding-left: 50px;
+}
+/* --------------------Feature Container---------------------- */
+.feature-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.feature-content h1{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+.box{
+    width: 80%;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px aliceblue;
+    padding: 10px;
+}
+.exp{
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    padding-top: 45px;
+    position: relative;
+    bottom: 6rem;
+    left: -5rem;
+}
+.exp h1{
+    margin: 0px;
+}
+.feature-image img{
+    width: 100%;
+}
+/* ---------------------Fact Container------------------- */
+.fact-box{
+    display: flex;
+    justify-content: space-around;
+}
+.fact-box div{
+    border:1px solid #FF900E;
+    text-align: center;
+    padding: 2rem;
+}
+.fact-box div img, .fact-box div h1, .fact-box div p{
+    margin: 0px;
+}
+/* ---------------------Sponsor Container-------------- */
+.sponser-title{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.sponsor-image{
+    display: flex;
+    justify-content: space-around;
+}
+/* ----------------------Footer-------------- */
+footer{
+    background-color: rgb(247, 223, 196);
+    height: 4rem;
+}
+.foot{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------MEDIA QUERY------------------ */
+@media screen and (max-width:567px) {
+    .header{
+        width: 100%;
+    }
+    .navigator h1{
+        text-align: center;
+    }
+    .navigator{
+        width: 100%;
+        flex-direction: column;
+    }
+    .quick-list-container{
+        flex-direction: column-reverse;
+    }
+    .quick-list-image{
+        grid-template-columns: 1fr;
+    }
+    .quick-list-content{
+        padding: 5px;
+    }
+    .feature-container,.fact-box,.sponsor-image{
+        flex-direction: column;
+    }
+    .feature-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sponsor-image img{
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (min-width:567px) and (max-width:950px) {
+    .header{
+        width: 100%;
+    }
+    .navigator h1{
+        font-size: 2rem;
+    }
+    .quick-list-container{
+        flex-direction: column-reverse;
+    }
+    .quick-list-content{
+        padding: 5px;
+    }
+    .feature-container,.fact-box,.sponsor-image{
+        flex-direction: column;
+    }
+    .feature-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sponsor-image img{
+        margin-bottom: 20px;
+    }
+
+}
